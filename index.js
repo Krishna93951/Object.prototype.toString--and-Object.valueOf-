@@ -15,7 +15,7 @@ Student.prototype.toString = function sToString () {
   var r = 'Student' + this.name +'  '+'is of'+'  '+this.USN + '  '+ this.branch ;
   return r;
 }
-console.log(S.sToString()); */
+console.log(S.sToString()); 
 
 function Number(value) {
    this.value = value
@@ -31,3 +31,16 @@ console.log(obj.valueOf());
 
 Number.prototype.valueOf = function() { return customPrimitiveValue; };
 console.log(Number.valueOf())
+
+*/
+//Array.from(keys)
+const mapper = new Map([['1', 'a'], ['2', 'b']]);
+console.log(Array.from(mapper.keys()));
+
+//Array.from(values)
+const mapper = new Map([['1', 'a'], ['2', 'b']]);
+console.log(Array.from(mapper.values()));
+
+
+//Array.from() using arrow as Map function
+console.log(Array.from({length: 5}, (v, i) => i));
