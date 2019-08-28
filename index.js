@@ -17,16 +17,16 @@ Student.prototype.toString = function sToString () {
 }
 console.log(S.sToString()); */
 
-function Number(n) {
-    this.number = n;
+function Number(value) {
+   this.value = value
 }
 
 Number.prototype.valueOf = function() {
-    return this.number;
+    return `Number is 2 and its twice is ${this.value}`
 };
 
-var myObj = new Number(4);
-console.log(myObj + 'llol'); // 
+var obj = new Number (4)
+console.log(obj.valueOf()); 
 
 
 Number.prototype.valueOf = function() { return customPrimitiveValue; };
